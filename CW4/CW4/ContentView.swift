@@ -47,6 +47,8 @@ struct ContentView: View {
                             result = "Good"
                         } else if Int(grade) ?? 0 >= 60 {
                             result = "Acceptable"
+                        } else if Int(grade) ?? 0 < 60 {
+                            result = "Failed"
                         }
                     }
                 
